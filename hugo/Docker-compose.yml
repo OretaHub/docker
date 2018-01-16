@@ -1,0 +1,15 @@
+version: '3'
+services:
+  blog01:
+    build: .
+    image: oreta/hugo-blog:v0.1
+    ports:
+      - "1313:1313"
+    volumes:
+      - ./site:/site
+    restart: always
+    # labels:
+    #   - "tra.backend=blog01"
+    #   - "traefik.port=1313"
+    #   - "traefik.frontend.rule=Host:blog01.example.com"
+    #   - "traefik.docker.network=traefik_webgateway"

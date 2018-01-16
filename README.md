@@ -16,3 +16,5 @@ Each time you would like to start something new and if its docker related
 > cd hugo
 > Place all your code under this directory
 > ```
+
+ 3. run this image
